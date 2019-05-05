@@ -1,0 +1,17 @@
+{
+  "name": "Open-Chat",
+  "version": "1.1.0",
+  "description": "new app",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-session": "^1.15.5",
+    "express-socket.io-session": "^1.3.2",
+    "micro": "latest",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.0.3",
+    "string-hash": "^1.1.3"
+  },
+  "scripts": {
+    "dev": "supervisor -e html,js,css server.js"
+  }
+}
