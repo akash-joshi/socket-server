@@ -71,9 +71,9 @@ io.on('connection', (socket) => {
 			}
 		}
 		if(room=='')
-			socket.emit("update", "You have connected to the default room. Refresh to switch room/username");
+			socket.emit("update", "You have connected to the default room.");
 		else	
-		socket.emit("update", "You have connected to room "+room+`. Refresh to switch room/username`);
+		socket.emit("update", `You have connected to room ${room}.`);
 		socket.emit("people-list", people[room]);
 		socket.to(room).broadcast.emit("add-person",nick,socket.id);
 		console.log(nick);
